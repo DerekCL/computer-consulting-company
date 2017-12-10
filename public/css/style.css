@@ -54,6 +54,14 @@
 .services {
   text-align: left;
 }
-.contact {
+.contact .image {
   text-align: center;
+}
+.contact .image img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5%;
+}
+.contact .content {
+  text-align: left;
 }
