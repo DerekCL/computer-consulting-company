@@ -7,15 +7,11 @@ require("dotenv").config();
 
 // File Initialization
 let express = require("express");
+let path = require("path");
 
 // Express initiation
 let app = express();
-let server = require("http").Server(app);
 
-// Here we are setting up the view engine
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
+app.get('/', (req, res) => res.send('Hello World!'))
 
-// ROUTES
-app.use("/", routes);
-const routes = require("./routes");
+app.listen(3000, () => console.log('server started on http://localhost:3000'))

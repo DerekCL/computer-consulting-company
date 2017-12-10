@@ -1,28 +1,28 @@
 {
-    "name": "computer-consulting-company",
-    "version": "0.0.1",
-    "description": "This is the website for the computer consulting company 'computers the lake'",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": {
-      "name": "Derek Lewandowski",
-      "email": "derekclewandowski@gmail.com"
-    },
-    "license": "ISC",
-    "dependencies": {
-      "express": "^4.16.2"
-    },
-    "devDependencies": {
-      "chai": "^4.1.2",
-      "eslint": "^4.7.2",
-      "eslint-plugin-promise": "^3.6.0",
-      "gulp": "^3.9.1",
-      "gulp-less": "^3.3.2",
-      "gulp-util": "^3.0.8",
-      "mocha": "^4.0.1",
-      "nyc": "^11.3.0"
-    }
+  "name": "computer-consulting-company",
+  "version": "0.0.1",
+  "description": "This is the website for the computer consulting company 'computers the lake'",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index",
+    "test": "nyc mocha 'tests/**/*.js'"
+  },
+  "author": {
+    "name": "Derek Lewandowski",
+    "email": "derekclewandowski@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.7.2",
+    "eslint-plugin-promise": "^3.6.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
+    "gulp-util": "^3.0.8",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
   }
-  
+}
