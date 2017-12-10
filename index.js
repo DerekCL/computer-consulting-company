@@ -26,6 +26,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "favicon", "favicon.ico")));
 
-app.get('/', (req, res) => res.send('Hello World!'))
+
+// Routing Setup
+const routes = require("./routes/index");
+app.use("/", routes);
 
 app.listen(3000, () => console.log('server started on http://localhost:3000'))
